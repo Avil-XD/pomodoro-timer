@@ -1,7 +1,6 @@
 # Pomodoro Timer
 
-A cross-platform, browser-based Pomodoro timer with a premium Apple-inspired design.
-
+A browser-based Pomodoro timer.
 ## Features
 
 - Real-time digital clock with 12/24 hour format support
