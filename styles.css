@@ -123,8 +123,8 @@ body {
     position: absolute;
     top: 90px;
     right: 30px;
-    width: 300px;
-    padding: 25px;
+    width: 280px;
+    padding: 20px;
     transition: all 0.3s ease;
     opacity: 1;
     transform: translateY(0);
@@ -137,44 +137,48 @@ body {
 }
 
 .settings-panel h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 .setting-group {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 10px;
 }
 
 .setting-group label {
-    display: block;
-    margin-bottom: 8px;
     color: var(--text-secondary);
+    font-size: 0.9rem;
 }
 
 .setting-group input[type="number"] {
     width: 100%;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-primary);
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .setting-group input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+    justify-self: start;
 }
 
 .time-format-select {
     width: 100%;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-primary);
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
 }
 
@@ -185,14 +189,15 @@ body {
 
 .save-btn {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     background: var(--accent);
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 15px;
 }
 
 .save-btn:hover {
@@ -232,11 +237,19 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
-        max-width: 300px;
+        width: 85%;
+        max-width: 280px;
     }
     
     .settings-panel.hidden {
         transform: translate(-50%, -60%);
+    }
+
+    .setting-group {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .setting-group label {
+        font-size: 0.85rem;
     }
 }
